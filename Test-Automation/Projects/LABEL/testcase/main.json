@@ -1,0 +1,84 @@
+{
+    "params": "",
+    "notification": {
+        "notify": false,
+        "subject": "Test Report",
+        "ownerName": "supor",
+        "mailList":["zhousuping@megvii.com"]
+    },
+    "executeType": "serial",
+    "suiteList": [
+        {
+            "suiteName": "ui_case_1_manage_publisher_group",
+            "folderPath": "/api",
+            "run": 1,
+            "executeSequencer": [
+                "manage_publisher_group.json"
+            ],
+            "notes": "ui_case_1_管理发布组"
+        },
+        {
+            "suiteName": "ui_case_2_manage_user_publisher_group",
+            "folderPath": "/api",
+            "run": 1,
+            "executeSequencer": [
+                "user_publisher_group.json"
+            ],
+            "notes": "ui_case_2_管理用户所在发布组"
+        },
+        {
+            "suiteName": "ui_case_3_manage_group",
+            "folderPath": "/api",
+            "run": 1,
+            "executeSequencer": [
+                "manage_group.json"
+            ],
+            "notes": "ui_case_3_管理小组"
+        },
+        {
+            "suiteName": "ui_case_4_manage_user_info",
+            "folderPath": "/api",
+            "run": 1,
+            "executeSequencer": [
+                "manage_user_info.json"
+            ],
+            "notes": "ui_case_4_管理用户信息"
+        },
+        {
+            "suiteName": "ui_case_5_common_api",
+            "folderPath": "/api",
+            "run": 1,
+            "executeSequencer": [
+                "common_api.json"
+            ],
+            "notes": "ui_case_5_公共接口"
+        },
+        {
+            "suiteName": "ui_case_6_manage_group_2",
+            "folderPath": "/api",
+            "run": 1,
+            "executeSequencer": [
+                "group_2.json"
+            ],
+            "notes": "ui_case_6_群组管理"
+        },
+        {
+            "suiteName": "ui_case_7_jobs_list",
+            "folderPath": "/api",
+            "run": 1,
+            "executeSequencer": [
+                "jobs_list.json"
+            ],
+            "notes": "ui_case_7_项目列表"
+        },
+      {
+            "suiteName": "ui_case_8_jobs_list",
+            "folderPath": "/api",
+            "run": 1,
+            "executeSequencer": [
+                "task_pool.json"
+            ],
+            "notes": "ui_case_8_分配任务池"
+        }
+    ]
+}

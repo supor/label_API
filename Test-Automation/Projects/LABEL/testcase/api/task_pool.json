@@ -1,0 +1,91 @@
+{
+    "id": "8",
+    "name": "任务池管理-task_pool",
+    "notification": {
+        "notify": false,
+        "subject": "Test Report",
+        "ownerName": "All",
+        "mailList": [
+            ""
+        ]
+    },
+    "tasks": [
+        {
+            "id": 1,
+            "name": "分配任务池-assign jobs to task_pool",
+            "moduleName": "Projects.LABEL.RestAPI.api.task_pool.assign_jobs",
+            "className": "",
+            "functionName": "assign_jobs_to_task_pool",
+            "params": {
+                "task_pool_id": 1,
+                "job_ids": [276],
+                "debug": 1
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 2,
+            "name": "获取任务池列表-get_list_of_task_pool",
+            "moduleName": "Projects.LABEL.RestAPI.api.task_pool.get_task_pool_list",
+            "className": "",
+            "functionName": "get_list_of_task_pool",
+            "params": {
+                "task_type_id": "1020",
+                "user_id": 1,
+                "enabled": 1
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 3,
+            "name": "更新任务池-update_task_pool",
+            "moduleName": "Projects.LABEL.RestAPI.api.task_pool.update_task_pool",
+            "className": "",
+            "functionName": "update_task_pool",
+            "params": {
+                "task_pool_id": 1,
+                "title": "test任务池-1",
+                "enabled": 1,
+                "email_enabled": 0,
+                "email_list": "",
+                "workload_email_enabled": 0,
+                "workload_email_list": "",
+                "edit_limit_seconds": 300,
+                "check_limit_seconds": 300,
+                "task_type_id": "",
+                "leaders": "",
+                "inspectors": ""
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 4,
+            "name": "获取任务池统计信息-get_task_pool_statistic",
+            "moduleName": "Projects.LABEL.RestAPI.api.task_pool.get_task_pool_statistic",
+            "className": "",
+            "functionName": "get_task_pool_statistic",
+            "params": {
+                "page": 1,
+                "per_page": 10,
+                "task_type_id": 0,
+                "user_type_id": 0,
+                "start_date": "2017-10-20",
+                "end_date": "2017-10-20"
+            },
+            "run": 1,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        }
+    ]
+}
+

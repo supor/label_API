@@ -1,0 +1,104 @@
+{
+    "id": "4",
+    "name": "管理用户信息-manage_user_info",
+    "notification": {
+        "notify": false,
+        "subject": "Test Report",
+        "ownerName": "All",
+        "mailList": [
+            ""
+        ]
+    },
+    "tasks": [
+        {
+            "id": 1,
+            "name": "修改用户属性-update_user_info",
+            "moduleName": "Projects.LABEL.RestAPI.api.user_info.update_user_info",
+            "className": "",
+            "functionName": "update_user_info",
+            "params": {
+                "user_id": 5,
+                "user_state": "",
+                "reset_password": false,
+                "role_manager": 1,
+                "role_leader": 1,
+                "role_editor": 1,
+                "role_checker": 1,
+                "role_sampler": 1,
+                "role_publisher": 1,
+                "user_type_id": 1,
+                "freeze": 0
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 2,
+            "name": "修改用户配置信息-update_user_profile",
+            "moduleName": "Projects.LABEL.RestAPI.api.user_info.update_user_profile",
+            "className": "",
+            "functionName": "update_user_profile",
+            "params": {
+                "user_id": 1,
+                "real_name": "supor",
+                "id_number": "123456789012345678",
+                "email": "93030@qq.com",
+                "phone": "13719999999",
+                "alipay": "13719999999"
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 3,
+            "name": "获取指定类型用户的信息-get_user_info",
+            "moduleName": "Projects.LABEL.RestAPI.api.user_info.get_user_info",
+            "className": "",
+            "functionName": "get_user_info",
+            "params": {
+                "role_name": "leader"
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 4,
+            "name": "获取用户配置信息-get_user_profile",
+            "moduleName": "Projects.LABEL.RestAPI.api.user_info.get_user_profile",
+            "className": "",
+            "functionName": "get_user_profile",
+            "params": {
+                "user_id": 1
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+      {
+            "id": 5,
+            "name": "获取client info-get_client_info",
+            "moduleName": "Projects.LABEL.RestAPI.api.user_info.get_client_info",
+            "className": "",
+            "functionName": "get_client_info",
+            "params": {
+                "grant_type": "password",
+                "username": "r",
+                "password": "vendor",
+                "client_id": "",
+                "response_type": ""
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        }
+    ]
+}
+

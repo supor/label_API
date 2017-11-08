@@ -1,0 +1,47 @@
+{
+    "id": "10",
+    "name": "task_batch",
+    "notification": {
+        "notify": false,
+        "subject": "Test Report",
+        "ownerName": "All",
+        "mailList": [
+            ""
+        ]
+    },
+    "tasks": [
+        {
+            "id": 1,
+            "name": "获取task_batch列表-get list of task batch",
+            "moduleName": "Projects.LABEL.RestAPI.api.task_batch.get_list_of_task_batch",
+            "className": "",
+            "functionName": "get_list_of_task_batch",
+            "params": {
+                "task_type_id": "",
+                "page": "",
+                "per_page": "",
+                "sorts": "",
+                "search": ""
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 1,
+            "name": "获取task_batch列表-get task batch",
+            "moduleName": "Projects.LABEL.RestAPI.api.task_batch.get_task_batch",
+            "className": "",
+            "functionName": "get_task_batch",
+            "params": {
+                "task_batch_id": ""
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        }
+    ]
+}
+

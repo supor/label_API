@@ -1,0 +1,88 @@
+{
+    "id": "6",
+    "name": "群组管理-manage_group_2",
+    "notification": {
+        "notify": false,
+        "subject": "Test Report",
+        "ownerName": "All",
+        "mailList": [
+            ""
+        ]
+    },
+    "tasks": [
+        {
+            "id": 1,
+            "name": "创建群组-create_group_2",
+            "moduleName": "Projects.LABEL.RestAPI.api.group_2.create_group_2",
+            "className": "",
+            "functionName": "create_group_2",
+            "params": {
+                "name": "supor_2"
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 2,
+            "name": "增加一个用户到群组-add_user_to_group",
+            "moduleName": "Projects.LABEL.RestAPI.api.group_2.add_user_to_group",
+            "className": "",
+            "functionName": "add_user_to_group",
+            "params": {
+                "group_id": 4,
+                "user_id": 2
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 3,
+            "name": "获取群组里的用户-get_list_users_of_group",
+            "moduleName": "Projects.LABEL.RestAPI.api.group_2.get_list_users_of_group",
+            "className": "",
+            "functionName": "get_list_users_of_group",
+            "params": {
+                "group_id": 4
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 4,
+            "name": "从群组中删除用户-remove_user_from_group",
+            "moduleName": "Projects.LABEL.RestAPI.api.group_2.remove_user_from_group",
+            "className": "",
+            "functionName": "remove_user_from_group",
+            "params": {
+                "group_id": 4,
+                "user_id": 2
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 5,
+            "name": "获取群组列表-get_list_of_groups",
+            "moduleName": "Projects.LABEL.RestAPI.api.group_2.get_list_of_groups",
+            "className": "",
+            "functionName": "get_list_of_groups",
+            "params": {
+                "page": 2,
+                "per_page": 1
+            },
+            "run": 1,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        }
+    ]
+}
+

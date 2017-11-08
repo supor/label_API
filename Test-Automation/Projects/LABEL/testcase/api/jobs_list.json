@@ -1,0 +1,35 @@
+{
+    "id": "7",
+    "name": "项目列表-jobs_list",
+    "notification": {
+        "notify": false,
+        "subject": "Test Report",
+        "ownerName": "All",
+        "mailList": [
+            ""
+        ]
+    },
+    "tasks": [
+        {
+            "id": 1,
+            "name": "项目列表-jobs_list",
+            "moduleName": "Projects.LABEL.RestAPI.api.job.list_of_jobs",
+            "className": "",
+            "functionName": "get_list_of_jobs",
+            "params": {
+                "page": "1",
+                "per_page": "5",
+                "sorts": "",
+                "search": "",
+                "task_type_id": "1020",
+                "priority": "",
+                "task_pool_id": ""
+            },
+            "run": 1,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        }
+    ]
+}
+

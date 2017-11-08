@@ -1,0 +1,4 @@
+"ui_case_3_manage_group","1","1","Skip","0.001"
+"ui_case_3_manage_group","1","2","Fail","0.166"
+"ui_case_3_manage_group","1","3","Pass","0.495"
+"ui_case_3_manage_group","1","NULL","Fail","0.671"

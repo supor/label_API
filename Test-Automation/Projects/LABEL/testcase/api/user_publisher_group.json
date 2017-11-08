@@ -1,0 +1,44 @@
+{
+    "id": "2",
+    "name": "管理用户发布组-manage_user_publisher_group",
+    "notification": {
+        "notify": false,
+        "subject": "Test Report",
+        "ownerName": "All",
+        "mailList": [
+            ""
+        ]
+    },
+    "tasks": [
+        {
+            "id": 1,
+            "name": "修改用户发布组-update_user_publisher_group",
+            "moduleName": "Projects.LABEL.RestAPI.api.user_publisher_group.update_user_publisher_group",
+            "className": "",
+            "functionName": "update_user_publisher_group",
+            "params": {
+                "user_id": "2",
+                "publisher_groups": [4, 5, 6]
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 2,
+            "name": "获取发布组-get_user_publisher_group",
+            "moduleName": "Projects.LABEL.RestAPI.api.user_publisher_group.get_user_publisher_group",
+            "className": "",
+            "functionName": "get_user_publisher_group",
+            "params": {
+                "user_id": 1
+            },
+            "run": 1,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        }
+    ]
+}
+

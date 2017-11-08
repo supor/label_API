@@ -1,0 +1,58 @@
+{
+    "id": "1",
+    "name": "管理发布组-manage_publisher_group",
+    "notification": {
+        "notify": false,
+        "subject": "Test Report",
+        "ownerName": "All",
+        "mailList": [
+            ""
+        ]
+    },
+    "tasks": [
+        {
+            "id": 1,
+            "name": "创建发布组-create_publisher_group",
+            "moduleName": "Projects.LABEL.RestAPI.api.publisher_group.create_publisher_group",
+            "className": "",
+            "functionName": "create_publisher_group",
+            "params": {
+                "title": "supor_test_发布组"
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 2,
+            "name": "获取发布组-get_publisher_group",
+            "moduleName": "Projects.LABEL.RestAPI.api.publisher_group.get_publisher_group",
+            "className": "",
+            "functionName": "get_publisher_group",
+            "params": {
+                "publisher_group_id": 1
+            },
+            "run": 1,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        },
+        {
+            "id": 3,
+            "name": "更新发布组-update_publisher_group",
+            "moduleName": "Projects.LABEL.RestAPI.api.publisher_group.update_publisher_group",
+            "className": "",
+            "functionName": "update_publisher_group",
+            "params": {
+                "publisher_group_id": 23,
+                "title": "修改title"
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        }
+    ]
+}
+

@@ -1,0 +1,17 @@
+"2017-09-29 13:12:08","DEBUG","ui_case_1_manage_publisher_group","Start to execute suite: ui_case_1_manage_publisher_group"
+"2017-09-29 13:12:08","DEBUG","ui_case_1_manage_publisher_group-1","Start to execute test case: 1 - 管理发布组-manage_publisher_group"
+"2017-09-29 13:12:08","DEBUG","ui_case_1_manage_publisher_group-1-1","Start to execute task: 1 - 创建发布组-create_publisher_group"
+"2017-09-29 13:12:08","DEBUG","ui_case_1_manage_publisher_group-1-1","Start to execute function 'create_publisher_group'"
+"2017-09-29 13:12:10","DEBUG","ui_case_1_manage_publisher_group-1-1","请求url: https://test.zzcrowd.com/api/v2/publisher-groups"
+"2017-09-29 13:12:10","DEBUG","ui_case_1_manage_publisher_group-1-1","请求方式: POST"
+"2017-09-29 13:12:10","DEBUG","ui_case_1_manage_publisher_group-1-1","请求参数: {'title': u'supor_\u6d4b\u8bd5\u53d1\u5e03\u7ec4'}"
+"2017-09-29 13:12:10","DEBUG","ui_case_1_manage_publisher_group-1-1","请求头部: {'Cookie': 'session=.eJxFzsEKgkAQANBfiTl7cFe6CB4KlzCYDUEcxotQKu6aBatSKv574KUfeLwVysbVQwvh6Kbag9JUEK5wuEMIKFWgL_xhm8xFfO50jAETS6bUR9IGs7xnUt-CVASbB4_BNeX47urXn7BVy9nT6KWyuk98TSh44Rnl1SCxYKkkUiqYCsMyt7c4OepTtHPTULu9AwK2H5wLNN4.DK0JyQ.ZIdgK4WPwKQ6rHUUk8ew7LWGGfI', 'postman-token': 'da3cfad2-33fb-9c66-7c67-61023951af07', 'content-type': 'application/json', 'cache-control': 'no-cache'}"
+"2017-09-29 13:12:10","DEBUG",Starting new HTTPS connection (1): test.zzcrowd.com
+"2017-09-29 13:12:11","DEBUG",https://test.zzcrowd.com:443 "POST /api/v2/publisher-groups HTTP/1.1" 201 134
+"2017-09-29 13:12:11","DEBUG","ui_case_1_manage_publisher_group-1-1","请求接口后，返回的结果为： {u'created_at': 1506661933, u'modified_at': 1506661933, u'id': 18, u'title': u'supor_\u6d4b\u8bd5\u53d1\u5e03\u7ec4'}"
+"2017-09-29 13:12:11","DEBUG","ui_case_1_manage_publisher_group-1-1","接口请求正确"
+"2017-09-29 13:12:11","DEBUG","ui_case_1_manage_publisher_group-1-1","End executing current task"
+"2017-09-29 13:12:11","INFO","ui_case_1_manage_publisher_group","1","1","Pass","2.276"
+"2017-09-29 13:12:11","INFO","ui_case_1_manage_publisher_group","1","NULL","Pass","2.319"
+"2017-09-29 13:12:11","DEBUG","ui_case_1_manage_publisher_group-1","End executing test case: 1 - 管理发布组-manage_publisher_group"
+"2017-09-29 13:12:11","DEBUG","ui_case_1_manage_publisher_group","End executing suite: ui_case_1_manage_publisher_group"

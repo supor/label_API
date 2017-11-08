@@ -1,0 +1,8 @@
+"2017-10-30 17:35:37","DEBUG","ui_case_1_manage_publisher_group","Test suite 'ui_case_1_manage_publisher_group' do not run because the param 'run' is 0"
+"2017-10-30 17:35:37","DEBUG","ui_case_2_manage_user_publisher_group","Test suite 'ui_case_2_manage_user_publisher_group' do not run because the param 'run' is 0"
+"2017-10-30 17:35:37","DEBUG","ui_case_3_manage_group","Test suite 'ui_case_3_manage_group' do not run because the param 'run' is 0"
+"2017-10-30 17:35:37","DEBUG","ui_case_4_manage_user_info","Test suite 'ui_case_4_manage_user_info' do not run because the param 'run' is 0"
+"2017-10-30 17:35:37","DEBUG","ui_case_5_common_api","Test suite 'ui_case_5_common_api' do not run because the param 'run' is 0"
+"2017-10-30 17:35:37","DEBUG","ui_case_6_manage_group_2","Test suite 'ui_case_6_manage_group_2' do not run because the param 'run' is 0"
+"2017-10-30 17:35:37","DEBUG","ui_case_7_jobs_list","Test suite 'ui_case_7_jobs_list' do not run because the param 'run' is 0"
+"2017-10-30 17:35:37","DEBUG","ui_case_8_jobs_list","Test suite 'ui_case_8_jobs_list' do not run because the param 'run' is 0"

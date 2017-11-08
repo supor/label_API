@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ui_case_8_jobs_list-Nov_07_2017_18_22_39</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <style type="text/css">
+        .main {
+            font: 14px Calibri;
+        }
+
+        .tbTasks {
+            width: 90%;
+            margin-left: 5%;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+            .tbTasks th {
+                color: #FFF;
+                text-align: center;
+                background-color: #4F81BD;
+                border: 1px solid #4F81BD;
+            }
+
+            .tbTasks td {
+                padding-left: 5px;
+                border: 1px solid #4F81BD;
+            }
+
+        .divTip {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 20px;
+            font: bold 16px Calibri;
+        }
+
+        .divNote {
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 20px;
+        }
+
+        .spPass {
+            font-weight: bold;
+            background-color: #00FF00;
+        }
+
+        .spFail {
+            font-weight: bold;
+            background-color: #FF0000;
+        }
+
+        .spSkip {
+            font-weight: bold;
+            background-color: #C0C0C0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <script type="text/javascript">
+        function ShowLogs(elementId) {
+            if (document.getElementById(elementId).style.display == "none") {
+                document.getElementById(elementId).style.display = "";
+            }
+            else {
+                document.getElementById(elementId).style.display = "none";
+            }
+        }
+        function ShowSubLogs(idPrefix) {
+            var trs = document.getElementsByTagName("tr");
+            for (i = 0; i < trs.length; i++) {
+                if (trs[i].id.substring(0, idPrefix.length) == idPrefix) {
+                    var elementId = trs[i].id;
+                    if (document.getElementById(elementId).style.display == "none") {
+                        document.getElementById(elementId).style.display = "";
+                    }
+                    else {
+                        document.getElementById(elementId).style.display = "none";
+                    }
+                }
+            }
+        }
+        function HashToFail(hashId) {
+            ShowLogs(hashId);
+            window.location.hash = "#" + hashId;
+        }
+    </script>
+</head>
+<body>
+    <div class='main'>
+        <div id='summary' style='display:block'>
+            <div class='divTip'>
+                <h2>Tasks: ui_case_8_jobs_list-Nov_07_2017_18_22_39 </h2>
+                <h3>Summary: 1</h3>
+
+            </div>
+            <table class='tbTasks'>
+                <tr>
+                    <th width='20%'>Total
+                    </th>
+                    <th width='20%'>Pass
+                    </th>
+                    <th width='20%'>Skip
+                    </th>
+                    <th width='20%'>Fail
+                    </th>
+                    <th width='20%'>Duration(sec)
+                    </th>
+                   
+                </tr>
+                <tr style='text-align: center'>
+                    <td>
+                        <span id='taskExecuted'>1</span>
+                    </td>
+                    <td>
+                        <span id='taskPassed' style='color: #00FF00'>1</span>
+                    </td>
+                    <td>
+                        <span id='taskSkipped' style='color: #C0C0C0'>0</span>
+                    </td>
+                    <td>
+                        <span id='taskFailed' style='color: #FF0000'>0</span>
+                    </td>
+                    <td>
+                        <span id='taskDuration'>0.207</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id='tasks'>
+            <div class='divTip'>
+                Test Logs
+                <br />
+                <br />
+            </div>
+            <table class='tbTasks'>
+                <tr>
+                    <th width='25%'>Case Id
+                    </th>
+                    <th width='25%'>Result
+                    </th>
+                    <th width='25%'>Logs
+                    </th>
+                    <th width='25%'>Task Duration(sec)
+                    </th>
+                </tr>
+                
+<tr>
+    <td style='font-weight: bold'><a style='margin-left: 44%' href='#' onclick="ShowSubLogs('tb_8')">(+)</a> case 8</td>
+    <td style='text-align: center'><span class='spPass'>Pass</span></td>
+    <td style='text-align: center'><a href='javascript:void(0)' onmousedown="ShowLogs('tr_8')">Link</a></td>
+    <td style='text-align: center'>0.207</td>
+</tr>
+<tr id='tr_8' style='display: none'>
+    <td colspan='4' style='word-break: break-all'>2017-11-07 18:22:43, log, DEBUG, log, ui_case_8_jobs_list-8, log, Start to execute test case: 8 - 任务池管理-task_pool<br/>2017-11-07 18:22:43, log, DEBUG, log, ui_case_8_jobs_list-8, log, End executing test case: 8 - 任务池管理-task_pool</td>
+</tr>
+
+<tr id='tb_8_1' style='display: none'>
+    <td><span style='margin-left: 49%'>task 1</span></td>
+    <td style='text-align: center'><span class='spSkip'>Skip</span></td>
+    <td style='text-align: center'><a href='javascript:void(0)' onmousedown="ShowLogs('tr_8_1')">Link</a></td>
+    <td style='text-align: center'>0.0</td>
+</tr>
+<tr id='tr_8_1' style='display: none'>
+    <td colspan='4' style='word-break: break-all'>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-1, Start to execute task: 1 - 分配任务池-assign jobs to task_pool<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-1, Current task is not run because the param 'run' is 0<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-1, End executing current task</td>
+</tr>
+
+<tr id='tb_8_2' style='display: none'>
+    <td><span style='margin-left: 49%'>task 2</span></td>
+    <td style='text-align: center'><span class='spSkip'>Skip</span></td>
+    <td style='text-align: center'><a href='javascript:void(0)' onmousedown="ShowLogs('tr_8_2')">Link</a></td>
+    <td style='text-align: center'>0.0</td>
+</tr>
+<tr id='tr_8_2' style='display: none'>
+    <td colspan='4' style='word-break: break-all'>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-2, Start to execute task: 2 - 获取任务池列表-get_list_of_task_pool<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-2, Current task is not run because the param 'run' is 0<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-2, End executing current task</td>
+</tr>
+
+<tr id='tb_8_3' style='display: none'>
+    <td><span style='margin-left: 49%'>task 3</span></td>
+    <td style='text-align: center'><span class='spSkip'>Skip</span></td>
+    <td style='text-align: center'><a href='javascript:void(0)' onmousedown="ShowLogs('tr_8_3')">Link</a></td>
+    <td style='text-align: center'>0.0</td>
+</tr>
+<tr id='tr_8_3' style='display: none'>
+    <td colspan='4' style='word-break: break-all'>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-3, Start to execute task: 3 - 更新任务池-update_task_pool<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-3, Current task is not run because the param 'run' is 0<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-3, End executing current task</td>
+</tr>
+
+<tr id='tb_8_4' style='display: none'>
+    <td><span style='margin-left: 49%'>task 4</span></td>
+    <td style='text-align: center'><span class='spPass'>Pass</span></td>
+    <td style='text-align: center'><a href='javascript:void(0)' onmousedown="ShowLogs('tr_8_4')">Link</a></td>
+    <td style='text-align: center'>0.181</td>
+</tr>
+<tr id='tr_8_4' style='display: none'>
+    <td colspan='4' style='word-break: break-all'>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-4, Start to execute task: 4 - 获取任务池统计信息-get_task_pool_statistic<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-4, Start to execute function 'get_task_pool_statistic'<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-4, 请求url: https://test.zzcrowd.com/api/v2/task-pools/statistic?page=1&per_page=10&task_type_id=0&user_type_id=0&start_date=2017-10-20&end_date=2017-10-20<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-4, 请求方式: GET<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-4, 请求头部: {'postman-token': 'da3cfad2-33fb-9c66-7c67-61023951af07', 'Cookie': 'session=.eJw9zrsOgjAUgOFXMWdmAMpEwqApMQynRFNtDguJWm71khQIAuHdVQa3f_ryz5AXVrcVhJ3ttQN5fYNwhs0FQkA_ZmJPAzXJmPGdERwZKfJJHVxUokZ5fpCK35mKI1gcuLa2yLuX0c8_QVM5oaIRVTKIxngoj3ds6P1tlqpTQFJUKE0geOmmPPlRTGyjletbbdcd8GD5ALvENYc.DOMaWg.Y3o5BmG3AJkTCQHV3RW9JSNjk-k', 'cache-control': 'no-cache'}<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-4, 请求接口后，返回的结果为： {u'detail': {u'items': [{u'edit': {u'count': 0, u'users': []}, u'sample': {u'count': 0, u'accepted': 0, u'users': [], u'rejected': 0}, u'inspect': {u'count': 0, u'accepted': 0, u'users': [], u'rejected': 0}, u'pool_info': {u'task_pool_id': 1, u'task_type': u'\u6d3b\u4f53 - \u5047\u8138\u8bc6\u522b', u'edit_limit_seconds': 300, u'workload_email_enabled': 0, u'title': u'test\u4efb\u52a1\u6c60-1', u'check_limit_seconds': 300, u'unit_type_id': 0, u'enabled': 1, u'disabled': False, u'email_list': u'', u'workload_email_list': u'', u'task_type_id': 1020, u'email_enabled': 0, u'task_type_desc': u'\u6d3b\u4f53 - \u5047\u8138\u8bc6\u522b', u'email_disabled': True, u'unit_type_desc': u'\u539f\u59cbunit', u'id': 1, u'workload_email_disabled': True}, u'check': {u'count': 1, u'accepted': 1, u'users': [1], u'rejected': 0}}, {u'edit': {u'count': 0, u'users': []}, u'sample': {u'count': 0, u'accepted': 0, u'users': [], u'rejected': 0}, u'inspect': {u'count': 0, u'accepted': 0, u'users': [], u'rejected': 0}, u'pool_info': {u'task_pool_id': 18, u'task_type': u'\u901a\u7528\u5de5\u5177 - \u56fe\u7247\u6279\u91cf\u7b5b\u9009', u'edit_limit_seconds': 300, u'workload_email_enabled': 0, u'title': u'\u56fe\u7247\u6279\u91cf\u7b5b\u9009-\u4efb\u52a1\u6c60', u'check_limit_seconds': 300, u'unit_type_id': 0, u'enabled': 1, u'disabled': False, u'email_list': None, u'workload_email_list': None, u'task_type_id': 5001, u'email_enabled': 0, u'task_type_desc': u'\u901a\u7528\u5de5\u5177 - \u56fe\u7247\u6279\u91cf\u7b5b\u9009', u'email_disabled': True, u'unit_type_desc': u'\u539f\u59cbunit', u'id': 18, u'workload_email_disabled': True}, u'check': {u'count': 1, u'accepted': 0, u'users': [1], u'rejected': 1}}], u'pagination': {u'total': 2, u'per_page': 10, u'current_page': 1}}, u'summary': {u'edit_count': 0, u'inspect_count': 0, u'sample_count': 0, u'check_count': 2, u'checker_count': 2, u'pool_count': 2, u'sampler_count': 0, u'inspector_count': 0, u'editor_count': 0}}<br/>2017-11-07 18:22:43, DEBUG, ui_case_8_jobs_list-8-4, End executing current task</td>
+</tr>
+<span style='display: none'>$subTaskFormat</span>
+<span style='display: none'>$taskFormat</span>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

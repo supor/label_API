@@ -1,0 +1,29 @@
+{
+    "id": "5",
+    "name": "公共接口",
+    "notification": {
+        "notify": false,
+        "subject": "Test Report",
+        "ownerName": "All",
+        "mailList": [
+            ""
+        ]
+    },
+    "tasks": [
+        {
+            "id": 1,
+            "name": "根据关键字过滤-get_filters_by_keys",
+            "moduleName": "Projects.LABEL.RestAPI.api.common_api.get_filters_by_keys",
+            "className": "",
+            "functionName": "get_filters_by_keys",
+            "params": {
+                "keys": "task_type_id=5000"
+            },
+            "run": 0,
+            "realtime": 1,
+            "expectedError": "",
+            "globalReturnedValue": 0
+        }
+    ]
+}
+
